@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.nav {
+  border-right: 2px solid var(--red-500);
+  min-height: 100vh;
+  padding: 1.5rem;
+  width: 250px;
+}
+
+.nav__brand {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav__links {
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.main {
+  flex: 1;
+  padding: 1.5rem;
+}

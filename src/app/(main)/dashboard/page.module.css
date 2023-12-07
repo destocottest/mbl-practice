@@ -1,0 +1,55 @@
+.title {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--red-500);
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 2rem;
+}
+/* book list */
+
+.books {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--zinc-transparent);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  transition: all 0.4s;
+  position: relative;
+  border-bottom: 4px solid transparent;
+}
+
+.book:hover {
+  border-bottom: 4px solid var(--red-500);
+}
+
+.book__cover {
+  object-fit: cover;
+  aspect-ratio: 2/ 3;
+  max-width: 120px;
+  height: auto;
+}
+
+/* REMOVE BOOK BUTTON */
+
+.remove {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  z-index: 10;
+}
+
+.remove:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: var(--stone-500);
+  cursor: pointer;
+}

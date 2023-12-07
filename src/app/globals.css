@@ -1,0 +1,45 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
+
+:root {
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+  --red-700: #b91c1c;
+  --zinc-500: #71717a;
+  --zinc-600: #52525b;
+  --zinc-700: #3f3f46;
+  --zinc-transparent: rgba(63, 63, 70, 0.1);
+}
+
+.btn {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  transition: all 0.2s;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: var(--red-500);
+}
+
+.btn-primary:hover {
+  background-color: var(--red-600);
+}
+
+.btn-secondary {
+  background-color: var(--zinc-500);
+}
+
+.btn-secondary:hover {
+  background-color: var(--zinc-600);
+}
+
+a {
+  text-decoration: none;
+}
